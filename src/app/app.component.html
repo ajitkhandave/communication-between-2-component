@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Hello world</h1>
+<h2>Parent app component</h2>
+
+
+<my-tutorials [passingDataNew]="newChildData" (childEvent)="childInfo($event)"></my-tutorials>
+<child-tutorial (newChildEvent)="newChildInfo($event)"[passingData]="childData"></child-tutorial>
